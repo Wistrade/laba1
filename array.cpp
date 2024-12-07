@@ -68,13 +68,12 @@ number Array::changeElement(unsigned int i, number x)
     A[i] = x;
 }
 
-//ostream& operator<< (ostream& os, Array& A)
-//{
-//    for (unsigned int i = 0; i < A.n; i++)
-//    {
-//        for (unsigned int j = 0; j < A.n; j++)
- //           os << A.A[i][j] << " ";
-  //      os << endl;
- //   }
- //   return os;
-//}
+ostream& operator<< (ostream& os, Array& A)
+{
+    for (unsigned int i = 0; i < n; i++)
+    {
+        os << A[i] << " ";
+        os << endl;
+    }
+    return os;
+}

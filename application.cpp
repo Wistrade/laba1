@@ -11,7 +11,7 @@ Application::Application()
 int Application::exec()
 {
     int ch;
-    Array* A = new Array(2);
+    Array* A = new Array[2];
 
     while (true)
     {
@@ -29,7 +29,7 @@ int Application::exec()
             cout << "Введите длину массива: ";
             cin >> n;
 
-            A = new Array(n);
+            A = new Array[n];
 
             for (int i = 0; i < n; i++)
             {
@@ -80,6 +80,7 @@ int Application::exec()
             cout << "Выберите новое значение для элемента: ";
             cin >> X;
             Array J(A->changeElement(i, X));
+            cout << J << endl;
             break;
         }
         case 7:

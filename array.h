@@ -9,11 +9,8 @@ class Array
     unsigned int n;
     number* A;
 public:
-    Array(unsigned int);
-    //friend ostream& operator<< (ostream&, Array&);
-
+    friend ostream& operator<< (ostream&, Array&);
     void set(unsigned int i, number val);
-
     number middle() const;
     number sko() const;
     number sortIncreas() const;
